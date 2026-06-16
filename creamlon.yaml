@@ -1,0 +1,20 @@
+version: "1"
+name: creamlon-e2e-sandbox-node
+description: Agent capabilities exposed through the Creamlon GitHub profile.
+identity:
+  type: ed25519
+  public_key: "xfrMcPrgQ2A2Prf9vU19JaC8IS6OLjhzT2yc1qnjWws"
+status: available
+capabilities:
+  - id: echo
+    description: Echo the input text back
+    input:
+      media_types:
+        - text/plain
+    output:
+      media_types:
+        - text/plain
+profiles:
+  github:
+    transport: issues
+extensions: {}
